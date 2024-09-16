@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from main import load_and_preprocess, get_summary_stats
 
 
-example_csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-age/congress-terms.csv"
+example_csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
 
 
 def test_load_and_preprocess():
@@ -21,10 +21,11 @@ def test_load_and_preprocess():
 
 
 def test_get_summary_stats():
+    """test that the summary function will work"""
     test_desc_stats = get_summary_stats(pd.read_csv(example_csv), "age_years")
-    assert desc_stats["mean"] == 44.043258
-    assert desc_stats["min"] == 38.620123
-    assert desc_stats["std"] == 5.860264
+    assert test_desc_stats["mean"] == 53.73247531045273  # assert approximate
+    assert test_desc_stats["min"] == 23.6659822039699
+    assert test_desc_stats["std"] == 10.763104939987494
 
 
 test_get_summary_stats()

@@ -52,7 +52,7 @@ def hist_cong_age(general_df, col):
     plt.title("Distribution of Ages in Congress", fontsize=16)
     plt.xlabel("Age", fontsize=14)
     plt.ylabel("Frequency", fontsize=14)
-    plt.show()
+    plt.savefig("output/congressional_age.png")
 
 
 hist_cong_age(general_df, "age_years")

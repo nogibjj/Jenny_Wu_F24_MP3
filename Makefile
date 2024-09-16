@@ -6,9 +6,9 @@ format:
 	black *.py
 
 lint:
-	pylint stats_2.py
+	pylint main.py
 
 test:
-	pytest test_stats_2.py
+	pytest test_main.py
 
 all: install lint test
