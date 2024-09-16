@@ -4,19 +4,29 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+def load_and_preprocess(csv):
+    """loads the data"""
+    general_df = pd.read_csv(csv)
+    return general_df
+
+
 dataset = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
 cg_age_df = pd.read_csv(dataset)
 cg_age_df.head()
 
 
-def get_summary_stats(dataset, col_of_intrst):
-    desc_stats = dataset[col_of_intrst].describe()
+def get_summary_stats():
+    """function that calls for the summary statistics"""
+    desc_stats = cg_age_df["age_years"].describe()
     print(
-        "The average age of a Congress member from during a particular congress between Jan 1947 and Feb 2014 is "
+        """The average age of a Congress member from during a particular congress between 
+        Jan 1947 and Feb 2014 is """
         + str(round(desc_stats["mean"], 3))
     )
     print(
-        "The median age of a Congress member from during a particular congress between Jan 1947 and Feb 2014 is "
+        """The median age of a Congress member from during a particular congress between 
+        Jan 1947 and Feb 2014 is """
         + str(round(desc_stats["50%"], 3))
     )
     print(
@@ -27,13 +37,7 @@ def get_summary_stats(dataset, col_of_intrst):
     return desc_stats
 
 
-def sum_desc():
-    """function that sets a new df variable equal to the summary stats"""
-    cg_age_stats = cg_age_df.describe()
-    print(cg_age_df)
-
-
-sum_desc()
+get_summary_stats()
 
 
 def build_chart():
