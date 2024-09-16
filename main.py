@@ -4,6 +4,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+"""Loading and Preprocessing"""
+
+csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
+
 
 def load_and_preprocess(csv):
     """loads the data"""
@@ -11,14 +15,14 @@ def load_and_preprocess(csv):
     return general_df
 
 
-dataset = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
-cg_age_df = pd.read_csv(dataset)
-cg_age_df.head()
+general_df = load_and_preprocess(csv)
+
+"""Summary Statistics"""
 
 
-def get_summary_stats():
-    """function that calls for the summary statistics"""
-    desc_stats = cg_age_df["age_years"].describe()
+def get_summary_stats(general_df, col):
+    """function that calls for the summary statistics for the variable age_years"""
+    desc_stats = general_df[col].describe()
     print(
         """The average age of a Congress member from during a particular congress between 
         Jan 1947 and Feb 2014 is """
@@ -37,15 +41,18 @@ def get_summary_stats():
     return desc_stats
 
 
-get_summary_stats()
+get_summary_stats(general_df, "age_years")
+
+"""Building Visualization"""
 
 
-def build_chart():
-    """builds a histogram out of the target columns"""
-    plt.hist(cg_age_df["age_years"], bins=20, edgecolor="black")
+def hist_cong_age(general_df, col):
+    """builds a histogram for the ages of all Congressmembers"""
+    plt.hist(general_df[col], bins=20, edgecolor="black")
     plt.title("Distribution of Ages in Congress", fontsize=16)
     plt.xlabel("Age", fontsize=14)
     plt.ylabel("Frequency", fontsize=14)
+    plt.show()
 
 
-build_chart()
+hist_cong_age(general_df, "age_years")
