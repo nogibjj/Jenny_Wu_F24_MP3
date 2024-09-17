@@ -6,7 +6,7 @@ format:
 	black *.py
 
 lint:
-	pylint main.py
+	ruff check *.py
 
 test:
 	pytest test_main.py

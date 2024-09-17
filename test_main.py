@@ -2,11 +2,7 @@
 Test goes here
 
 """
-
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-
 from main import load_and_preprocess, get_summary_stats
 
 
@@ -29,7 +25,4 @@ def test_get_summary_stats():
 
 
 test_get_summary_stats()
-
-if __name__ == "__main__":
-    test_load_and_preprocess()
-    get_summary_stats()
+test_load_and_preprocess()
