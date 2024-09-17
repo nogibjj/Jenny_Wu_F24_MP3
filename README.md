@@ -1,3 +1,7 @@
+[![Format](https://github.com/nogibjj/Jenny_Wu_MP2_F24/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_MP2_F24/actions/workflows/hello.yml)
+
+
+
 # Jenny_Wu_MP2_F24
 F24 Mini Project 2
 

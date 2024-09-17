@@ -29,7 +29,6 @@ def get_summary_stats(general_df, col):
     return desc_stats
 
 
-
 """Building Visualization"""
 
 
@@ -44,10 +43,8 @@ def hist_cong_age(general_df, col):
     plt.show()
 
 
-
-
 def main():
-
+    """Calling the functions as defined with the specific dataset"""
     csv = "https://raw.githubusercontent.com/fivethirtyeight/data/master/congress-demographics/data_aging_congress.csv"
 
     general_df = load_and_preprocess(csv)
