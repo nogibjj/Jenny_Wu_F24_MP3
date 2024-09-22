@@ -1,12 +1,12 @@
 """Takes a csv file, reads it, and creates graphs"""
 
-import pandas as pd
+import polars as pl
 import matplotlib.pyplot as plt
 
 
 def load_and_preprocess(csv):
     """loads the data"""
-    general_df = pd.read_csv(csv)
+    general_df = pl.read_csv(csv)
     return general_df
 
 
@@ -16,17 +16,8 @@ def load_and_preprocess(csv):
 def get_summary_stats(general_df, col):
     """function that calls for the summary statistics for the variable age_years"""
     desc_stats = general_df[col].describe()
-    print(
-        f'The average age of a Congress member from during a  {round(desc_stats["mean"], 3)}'
-    )
-    print(
-        f'The median age of a Congress member from during a {round(desc_stats["50%"], 3)}'
-    )
-    print(
-        f'Standard Deviation between the ages of Congress members is {round(desc_stats["std"], 3)}'
-    )
-
-    return desc_stats
+    desc_df = pl.DataFrame(desc_stats)
+    return desc_df
 
 
 """Building Visualization"""
