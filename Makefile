@@ -9,6 +9,6 @@ lint:
 	ruff check *.py
 
 test:
-	pytest test_main.py
+	pytest *.py
 
 all: install lint test
