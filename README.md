@@ -1,7 +1,7 @@
 [![CI/CD](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/CICD.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/CICD.yml)
 
-# Jenny_Wu_MP2_F24
-F24 Mini Project 3
+# Jenny_Wu_MP3_F24
+F24 Mini Project 3 with Polars
 
 ### Purpose of Project
 The goal of this project is to utilize the polars library to create summary statistics and a visualization for a selected data set. To find the file that conducts the descriptive statistic, please see the "lib.py" file or the "Congressional Age.ipynb". Moreover, you can find the Markdown print out in the "summary_stats.d" file. 
