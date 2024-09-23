@@ -1,5 +1,4 @@
-
-
+[![CI/CD](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/hello.yml)
 
 # Jenny_Wu_MP2_F24
 F24 Mini Project 3
@@ -15,3 +14,23 @@ The goal of this project is to utilize the polars library to create summary stat
  - Python script
  - CI/CD with badge
  - Generated summary report (PDF or markdown) via CI/CD for extra credit or making your own PDF or MD file and pushing it
+
+ ### Project Organization 
+    .dev container
+    - devcontainter.json
+    - Dockerfile
+    .github 
+        workflows
+            - CICD.yml
+    output
+        - congressional_age.png
+    - desc_stats_main.py
+    - lib.py
+
+    - test_desc_stats_main.py
+    - test_lib.py
+    - summary_stats.md
+    Congressional Age.ipynb
+    Makefile
+    README.md
+    requirements.txt
