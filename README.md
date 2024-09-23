@@ -4,7 +4,9 @@
 F24 Mini Project 3
 
 ### Purpose of Project
-The goal of this project is to utilize the polars library to create summary statistics and visualizations for a data set. 
+The goal of this project is to utilize the polars library to create summary statistics and a visualization for a selected data set. To find the file that conducts the descriptive statistic, please see the "lib.py" file or the "Congressional Age.ipynb". Moreover, you can find the Markdown print out in the "summary_stats.d" file. 
+
+![alt text](output/congressional_age.png)
 
 ### Requirements:
  - Python script using Polars for descriptive statistics
@@ -26,7 +28,6 @@ The goal of this project is to utilize the polars library to create summary stat
         - congressional_age.png
     - desc_stats_main.py
     - lib.py
-
     - test_desc_stats_main.py
     - test_lib.py
     - summary_stats.md
