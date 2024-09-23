@@ -32,7 +32,7 @@ def get_summary_stats(general_df, col):
         f.write("#### Table of Summary Statistics \n")
         f.write(string_df)
         f.write("\n \n")
-        f.write("![Congressional Age](outputs/congressional_age.png)\n")
+        f.write("![Congressional Age](output/congressional_age.png)\n")
     return desc_stats
 
 

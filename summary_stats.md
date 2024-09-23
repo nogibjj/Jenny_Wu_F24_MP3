@@ -12,4 +12,4 @@ This report displays the outputs from the main.py file, which include a table of
 | 75%        | 61.215606 |
 | max        | 98.080767 |
  
-![Congressional Age](outputs/congressional_age.png)
+![Congressional Age](output/congressional_age.png)
