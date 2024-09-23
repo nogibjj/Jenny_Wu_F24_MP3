@@ -10,7 +10,7 @@ nbqa
 ruff
 
 #data science
-pandas
+polars
 
 #data visualization
 matplotlib
