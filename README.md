@@ -1,4 +1,4 @@
-[![CI/CD](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/hello.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/hello.yml)
+[![CI/CD](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/CICD.yml/badge.svg)](https://github.com/nogibjj/Jenny_Wu_F24_MP3/actions/workflows/CICD.yml)
 
 # Jenny_Wu_MP2_F24
 F24 Mini Project 3
